@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Health Hub</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 2rem;
+        }
+        .panel {
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="container mx-auto p-4 md:p-8 lg:p-12">
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8 sm:mb-12">AI Health Hub</h1>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            <!-- Panel 1: SPARK AI -->
+            <!-- Updated the panel to be a link -->
+            <div onclick="window.open('http://localhost:8501', '_blank')"
+                class="panel flex flex-col items-center justify-center bg-white p-6 rounded-3xl shadow-lg 
+                       hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 
+                       cursor-pointer border-2 border-transparent hover:border-blue-500">
+               <span class="text-5xl mb-3">🤖</span>
+               <p class="text-lg font-medium text-gray-700 text-center">SPARK AI</p>
+            </div>
+            <!-- Panel 2: Hospital Nearby -->
+            <div class="panel flex flex-col items-center justify-center bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer border-2 border-transparent hover:border-green-500">
+                <span class="text-5xl mb-3">🏥</span>
+                <p class="text-lg font-medium text-gray-700 text-center">Hospital nearby</p>
+            </div>
+
+            <!-- Panel 3: Verify Medicine -->
+            <div class="panel flex flex-col items-center justify-center bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer border-2 border-transparent hover:border-purple-500">
+                <span class="text-5xl mb-3">💊</span>
+                <p class="text-lg font-medium text-gray-700 text-center">Verify Medicine</p>
+            </div>
+
+            <!-- Panel 4: Notifications -->
+            <div class="panel flex flex-col items-center justify-center bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer border-2 border-transparent hover:border-yellow-500">
+                <span class="text-5xl mb-3">🔔</span>
+                <p class="text-lg font-medium text-gray-700 text-center">Notifications</p>
+            </div>
+            
+            <!-- Panel 5: Consult Doctor -->
+            <div class="panel flex flex-col items-center justify-center bg-white p-6 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 ease-in-out transform hover:-translate-y-2 cursor-pointer border-2 border-transparent hover:border-red-500">
+                <span class="text-5xl mb-3">👨‍⚕️</span>
+                <p class="text-lg font-medium text-gray-700 text-center">Consult Doctor</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
